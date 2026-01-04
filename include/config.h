@@ -48,12 +48,12 @@
 // ============================================
 // CONFIGURACIÓN MQTT (Opcional)
 // ============================================
-#define MQTT_ENABLED false // Cambiar a true para habilitar
+#define MQTT_ENABLED true // Cambiar a true para habilitar
 
 #define MQTT_SERVER "192.168.1.39" // IP de Raspberry Pi
 #define MQTT_PORT 1883
 #define MQTT_USER "nodered"
-#define MQTT_PASSWORD "nodered1234"
+#define MQTT_PASSWORD "nodered040873"
 #define MQTT_CLIENT_ID "ac-water-monitor"
 
 // Topic MQTT (único)
@@ -62,8 +62,8 @@
 // ============================================
 // CONFIGURACIÓN WiFi
 // ============================================
-#define WIFI_SSID "TU_WIFI_SSID"
-#define WIFI_PASSWORD "TU_WIFI_PASSWORD"
+#define WIFI_SSID "Darío WiFi_IoT"
+#define WIFI_PASSWORD "P!nch0C@st3ll4n0"
 
 // ============================================
 // COLORES TFT (RGB565)
