@@ -108,10 +108,32 @@ Si los sensores no siguen la secuencia correcta:
 - 🔊 Buzzer suena intermitente
 - 💧 Bomba se activa por tiempo de seguridad
 
-### Botón de Reset
+### Botón de Reset (GPIO 0 / BOOT)
 **Mantener presionado 2 segundos:**
 - Si hay error → Limpia el error y vuelve a IDLE
 - Si no hay error → Reinicia el ESP32
+
+### 🎮 Modo Demo
+Para probar sin sensores conectados:
+1. Encendé el ESP normalmente
+2. Durante el splash (gota de agua), mantené presionado **BOOT**
+3. Verás "MODO DEMO - Simulación activa"
+
+El modo demo simula automáticamente:
+- Llenado del tanque (nivel 1→7)
+- Encendido de bomba con animación
+- Vaciado del tanque (nivel 7→0)
+- Ciclo repetido infinitamente
+
+## 🎨 Interfaz Visual
+
+El display muestra:
+- **Tanque con bordes redondeados** y ondas animadas
+- **Gradiente de colores** por nivel de agua
+- **Ícono de bomba animado** (aspas rotan cuando está activa)
+- **Gotas de agua** saliendo cuando bombea
+- **Estado**: NORMAL / LLENANDO / VACIANDO / ERROR
+- **Estadísticas**: ciclos completados, duración último ciclo
 
 ## 📡 MQTT
 
@@ -140,4 +162,3 @@ Topic único: `ac-monitor/status`
 ## 📄 Licencia
 
 MIT License - Libre para uso personal y comercial.
-
