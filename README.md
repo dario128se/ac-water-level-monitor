@@ -27,6 +27,9 @@ Sistema IoT para monitoreo de nivel de agua en depósito de descarga de aire aco
 
 ## 🔌 Conexiones
 
+### Diagrama de Conexiones
+📋 Ver documentación detallada: [docs/CONEXIONES.md](docs/CONEXIONES.md)
+
 ### Sensores de Nivel
 ```
 Sensor 1 (bajo)  → GPIO 34
